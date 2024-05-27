@@ -1,0 +1,34 @@
+<navigation-bar title="预约" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+
+<van-cell-group>
+
+  <van-field
+    model:value="{{ segments }}"
+    label="预约时段"
+    type="textarea"
+    autosize
+    readonly
+  />
+  <van-field
+    model:value="{{ studentName }}"
+    label="学生姓名"
+    placeholder="请输入学生姓名"
+    error-message="{{ studentNameError }}"
+    bind:change="onChange"
+  />
+  <van-field
+    model:value="{{ teacherName }}"
+    label="老师姓名"
+    placeholder="请输入老师姓名"
+    error-message="{{ teacherNameError }}"
+    border="{{ false }}"
+    bind:change="onChange"
+  />
+</van-cell-group>
+
+<view class="additional-button">
+    <button bindtap="confirm">确认</button>
+</view>
+<view  class="cancel-button">
+    <button bindtap="cancel">取消</button>
+</view>

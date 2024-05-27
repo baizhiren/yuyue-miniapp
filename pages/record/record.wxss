@@ -1,0 +1,49 @@
+/**index.wxss**/
+page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(241, 241, 241) !important;
+}
+
+/* 添加到你的小程序的 CSS 文件中 */
+.custom-cell {
+  /* 设置更小的高度 */
+  /* height: 30px !important;  */
+
+  /* border-bottom: 2px solid #ccc !important;  */
+  /*设置下边框为黑色且粗细为2px */
+  margin: 10px 0; /* 增加顶部和底部的间隙 */
+}
+.custom-title {
+  flex-grow: 4 !important; /* 让标题扩展更多 */
+  /* color: gray; 设置字体颜色为灰色 */
+  font-size: 14px !important; /* 设置字号比默认小一号 */
+}
+
+/* 在你的 CSS 文件中添加以下规则 */
+
+.group-class {
+  /* 设置需要保持白色背景的元素的背景为白色 */
+  /* background-color: #fff !important;  */
+  padding-bottom: 60px; /* 底部内边距，避免内容被导航栏遮挡 */
+}
+
+.custom-c-title{
+  font-size: 14px !important;
+  padding-left: 0 !important;
+  text-align: left !important; 
+  /* 设置文本对齐为左对齐 */
+  
+}
+.custom-collapse{
+  padding-left: 0 !important;
+  text-align: left !important; /* 设置文本对齐为左对齐 */
+  background-color: blue !important;
+}
+
+
+.custom-item{
+  padding: 0% !important;
+  font-size: 14px !important; 
+}

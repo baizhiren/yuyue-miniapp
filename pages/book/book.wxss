@@ -1,0 +1,97 @@
+/**index.wxss**/
+page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(243, 243, 243) !important;
+}
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 6px;
+  padding-bottom: 60px; /* 底部内边距，避免内容被导航栏遮挡 */
+}
+.button-container-clicked {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 6px;
+  padding-bottom: 100px; /* 底部内边距，避免内容被导航栏遮挡 */
+}
+.time-info {
+  width: 100%; /* 保证时间信息占满一整行 */
+  text-align: center; /* 文字居中显示 */
+  margin-bottom: 0px; /* 减小与下面内容的距离 */
+  font-size: 16px; /* 字体大小 */
+  line-height: 2; /* 减小行高，减少视觉间隔 */
+}
+
+.status-info {
+  width: 100%; /* 保证状态信息占满一整行 */
+  text-align: center; /* 文字居中显示 */
+  margin-top: 0px; /* 上边距减小，靠近时间信息 */
+  font-size: 16px;
+  line-height: 2; /* 减小行高，减少视觉间隔 */
+}
+
+.book-button {
+  /* width: 30%; /* 直接设置按钮宽度占容器的一部分 */
+  display: flex; 
+  justify-content: center; /* 按钮居中显示 */
+  margin-bottom: 10px; /* 行间距 */
+  flex: 0 0 45%; /* 按钮宽度设置为自身容器宽度的100% */
+  flex-direction: column; /* 设置为垂直堆叠 */
+  border: 1px solid #1AAD19; /* 细边框 */
+  background-color: white; /* 白色填充 */
+  color: #1AAD19; /* 文字颜色 */
+  border-radius: 4px; /* 轻微的圆角 */
+  padding: 0px 0; /* 垂直内边距 */
+  text-align: center; /* 文字居中 */
+}
+
+.book-button-unbooked { /* 未预约 */
+  border: 1px solid #1AAD19; /* 绿色边框 */
+  color: #1AAD19; /* 文字颜色 */
+}
+
+.book-button-booked { /* 已预约 */
+  border: 1px solid gray; /* 灰色边框 */
+  color: gray; /* 文字颜色 */
+}
+
+.book-button-clicked {
+  border: 1px solid skyblue; /* 绿色边框 */
+  color: skyblue; /* 白色文字 */
+}
+
+.additional-button {
+  position: fixed; /* 使用固定定位 */
+  right: 10px; /* 距离右侧10px */
+  bottom: 50px; /* 距离底部60px，根据你的导航栏高度调整 */
+  z-index: 1000; /* 确保按钮在其他内容之上 */
+}
+
+.additional-button button {
+  background-color: #47b147; /* 绿色背景 */
+  color: white; /* 白色文字 */
+  border: none;
+  border-radius: 6px;
+  padding: 2px; /* 减少左右的内边距 */
+  width: 100px; /* 设置具体的宽度 */
+}
+
+
+.cancel-button {
+  position: fixed; /* 使用固定定位 */
+  left: 10px; /* 距离右侧10px */
+  bottom: 50px; /* 距离底部60px，根据你的导航栏高度调整 */
+  z-index: 1000; /* 确保按钮在其他内容之上 */
+}
+
+.cancel-button button {
+  background-color: rgb(212, 82, 82); /* 绿色背景 */
+  color: white; /* 白色文字 */
+  border: none;
+  border-radius: 6px;
+  padding: 2px; /* 减少左右的内边距 */
+  width: 100px; /* 设置具体的宽度 */
+}

@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/book/book",
+    "pages/status/status",
+    "pages/config/config",
+    "pages/record/record",
+    "pages/confirmBook/confirmBook",
+    "pages/checkRecord/checkRecord"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/status/status"
+      },
+      {
+        "pagePath": "pages/book/book"
+      },
+      {
+        "pagePath": "pages/config/config"
+      },
+      {
+        "pagePath": "pages/record/record"
+      }
+    ]
+  },
+  "rendererOptions": {
+    "skyline": {
+      "defaultDisplayBlock": true,
+      "disableABTest": true,
+      "sdkVersionBegin": "3.0.0",
+      "sdkVersionEnd": "15.255.255"
+    }
+  },
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

@@ -1,0 +1,40 @@
+<navigation-bar title="预约" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+
+<van-cell-group custom-class="custom-cell-group">
+  <van-field
+    model:value="{{ segments }}"
+    label="预约时间"
+    type="textarea"
+    autosize
+    readonly
+    title-width="60px"
+  />
+  <van-field
+    model:value="{{ roomName }}"
+    label="会议室"
+    type="textarea"
+    autosize
+    readonly
+    title-width="60px"
+  />
+  <van-field
+    model:value="{{ bookTime }}"
+    label="创建时间"
+    readonly
+    title-width="60px"
+  />
+</van-cell-group>
+
+
+<view class="additional-button">
+    <button bindtap="confirm">返回</button>
+</view>
+
+<view wx:if="{{!expire}}">
+  <view  class="cancel-button">
+      <button bindtap="cancel">取消预约</button>
+  </view>
+</view>
+
+
+

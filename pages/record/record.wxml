@@ -1,0 +1,39 @@
+
+  <navigation-bar title="记录" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+  <custom-tabbar active='record'></custom-tabbar>    
+
+  <van-notify id="van-notify"/>
+
+   <van-cell-group inset class="group-class">
+    <block wx:for="{{book_infos}}" wx:key="bookId">
+      <van-cell is-link title-class="custom-title" custom-class="custom-cell" 
+      bind:click="click_record" data-item="{{item}}" data-index="{{index}}">
+        <view slot="title">
+          <view class="van-cell-text">{{item.segment_info_2}}</view>
+          <van-tag type="success">{{item.roomName}}</van-tag>
+        </view>
+      </van-cell>
+    </block>
+    
+      <!-- <van-cell is-link title-class="custom-title" custom-class="custom-cell">
+        <view slot="title">
+          <view class="van-cell-text">2024.5.25 星期三 10:00-12:00\n2024.5.25 星期三 10:00-12:00</view>
+          <van-collapse value="{{ activeNames }}" bind:change="onChange" custom-class="custom-collapse">
+            <van-collapse-item name="1" title="2024.5.25 星期三 10:00-12:00\n2024.5.25 星期三 10:00-12:00" content-class="custom-item" title-class="custom-c-title">   
+              2024.5.25 星期三 12:00-14:00
+            </van-collapse-item>
+          </van-collapse>
+          <van-tag type="success">科研楼610</van-tag>
+        </view>
+      </van-cell> -->
+    </van-cell-group>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "navigation-bar": "/components/navigation-bar/navigation-bar",
+    "custom-tabbar": "/components/custom-tabbar/custom-tabbar",  
+    "van-dropdown-menu": "/@vant/weapp/dropdown-menu/index",
+    "van-dropdown-item": "/@vant/weapp/dropdown-item/index",
+    "van-button": "/@vant/weapp/button/index",
+    "van-notify": "/@vant/weapp/notify/index"
+
+  }
+}

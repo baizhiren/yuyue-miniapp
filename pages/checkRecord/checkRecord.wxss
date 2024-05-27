@@ -1,0 +1,40 @@
+/* pages/checkRecord/checkRecord.wxss *//**index.wxss**/
+page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.additional-button {
+  position: fixed; /* 使用固定定位 */
+  right: 10px; /* 距离右侧10px */
+  bottom: 50px; /* 距离底部60px，根据你的导航栏高度调整 */
+  z-index: 1000; /* 确保按钮在其他内容之上 */
+}
+
+.additional-button button {
+  background-color: #47b147; /* 绿色背景 */
+  color: white; /* 白色文字 */
+  border: none;
+  border-radius: 6px;
+  padding: 2px; /* 减少左右的内边距 */
+  width: 100px; /* 设置具体的宽度 */
+}
+
+
+.cancel-button {
+  position: fixed; /* 使用固定定位 */
+  left: 10px; /* 距离右侧10px */
+  bottom: 50px; /* 距离底部60px，根据你的导航栏高度调整 */
+  z-index: 1000; /* 确保按钮在其他内容之上 */
+}
+
+.cancel-button button {
+  background-color: rgb(212, 82, 82); /* 绿色背景 */
+  color: white; /* 白色文字 */
+  border: none;
+  border-radius: 6px;
+  padding: 2px; /* 减少左右的内边距 */
+  width: 100px; /* 设置具体的宽度 */
+}

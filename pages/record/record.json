@@ -1,0 +1,13 @@
+{
+  "usingComponents": {
+    "navigation-bar": "/components/navigation-bar/navigation-bar",
+    "custom-tabbar": "/components/custom-tabbar/custom-tabbar",
+    "van-cell": "/@vant/weapp/cell/index",
+    "van-cell-group": "/@vant/weapp/cell-group/index",
+    "van-tag": "/@vant/weapp/tag/index",
+    "van-field": "/@vant/weapp/field/index",
+    "van-collapse": "/@vant/weapp/collapse/index",
+    "van-collapse-item": "/@vant/weapp/collapse-item/index",
+    "van-notify": "/@vant/weapp/notify/index"
+  }
+}

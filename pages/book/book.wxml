@@ -1,0 +1,31 @@
+<!--index.wxml-->
+<navigation-bar title="预约" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+<van-notify id="van-notify"/>
+<van-dropdown-menu>
+    <van-dropdown-item value="{{ week }}" options="{{ weeks }}" bind:change="weekchange"/>
+    <van-dropdown-item value="{{ roomName }}" options="{{ roomNames }}" bind:change="roomNameChange"/>
+</van-dropdown-menu>
+
+<view class="{{ (clicked_segments.length > 0 ? 'button-container-clicked' : 'button-container') }}">
+  <block wx:for="{{segments}}" wx:key="tId">
+    <button class="book-button {{ (item.click === true ? 'book-button-clicked' : (item.status == '1' ? 'book-button-unbooked': 'book-button-booked')) }}" bindtap="handleButtonClick" 
+    data-item="{{item}}" data-index="{{index}}">
+        <view class="time-info">
+          <text>{{item.time}}</text> 
+        </view>
+        <view class="status-info">{{item.status == '1' ? '可预约' : (item.status == '0' ? '不可预约': item.teacherName + '已预约')}}
+        </view>
+    </button>
+  </block>
+</view>
+
+<view wx:if="{{clicked_segments.length > 0}}" class="additional-button">
+    <button bindtap="confirmBook">确认预约</button>
+</view>
+
+<view wx:if="{{clicked_segments.length > 0}}" class="cancel-button">
+    <button bindtap="cancelBook">取消</button>
+</view>
+
+<custom-tabbar active='book'></custom-tabbar>
+
